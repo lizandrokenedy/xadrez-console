@@ -12,7 +12,6 @@ namespace xadrez_console {
                 while (!partida.terminada) {
                     try {
                         Console.Clear();
-
                         Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
@@ -38,8 +37,8 @@ namespace xadrez_console {
                         Console.ReadLine();
                     }
                 }
-
-
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException ex) {
                 Console.WriteLine(ex.Message);
